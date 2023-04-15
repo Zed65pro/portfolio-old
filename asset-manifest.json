@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://Zed65pro.github.io/portfolio/static/css/main.dd1ea7b7.css",
-    "main.js": "https://Zed65pro.github.io/portfolio/static/js/main.4ad382d1.js",
+    "main.js": "https://Zed65pro.github.io/portfolio/static/js/main.91fad0e8.js",
     "index.html": "https://Zed65pro.github.io/portfolio/index.html",
     "main.dd1ea7b7.css.map": "https://Zed65pro.github.io/portfolio/static/css/main.dd1ea7b7.css.map",
-    "main.4ad382d1.js.map": "https://Zed65pro.github.io/portfolio/static/js/main.4ad382d1.js.map"
+    "main.91fad0e8.js.map": "https://Zed65pro.github.io/portfolio/static/js/main.91fad0e8.js.map"
   },
   "entrypoints": [
     "static/css/main.dd1ea7b7.css",
-    "static/js/main.4ad382d1.js"
+    "static/js/main.91fad0e8.js"
   ]
 }
