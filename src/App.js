@@ -21,21 +21,27 @@ const themes = {
 
 const App = () => {
   const [theme, setTheme] = useState("light");
-
+  console.log(process.env.PUBLIC_URL);
   return (
     <ThemeProvider theme={themes[theme]}>
       <GlobalStyle />
       <Router>
         <Navbar theme={theme} setTheme={setTheme} />
         <Routes>
-          <Route path={constants.ROUTE_HOME} element={<Home />} />
-          <Route path={constants.ROUTE_PROJECTS} element={<MyProjects />} />
+          <Route path={`${constants.ROUTE_HOME}`} element={<Home />} />
+          <Route
+            path={`${constants.ROUTE_PROJECTS}`}
+            element={<MyProjects />}
+          />
           <Route
             path={`${constants.ROUTE_PROJECTS}/:${constants.ROUTE_PROJECT_ID}`}
             element={<MyProject />}
           />
 
-          <Route path={constants.ROUTE_EXPERIENCE} element={<MyExperience />} />
+          <Route
+            path={`${constants.ROUTE_EXPERIENCE}`}
+            element={<MyExperience />}
+          />
         </Routes>
         <Footer />
       </Router>

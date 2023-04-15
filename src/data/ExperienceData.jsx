@@ -25,7 +25,7 @@ export const experienceData = [
     location: "Ankara, Turkiye",
     period: "Jun 2022 - Feb 2023",
     description: [],
-    image: "~/assets/images/experience-images/sec.jpeg",
+    image: `${process.env.PUBLIC_URL}/assets/images/experience-images/sec.jpeg`,
   },
 ];
 
@@ -34,7 +34,7 @@ export const educationData = [
     school: "Ankara University",
     period: "Jul 2019 - Jul 2023",
     received: "B.S. in Computer Engineering",
-    image: "~/assets/images/experience-images/AnkaraUniv.png",
+    image: `${process.env.PUBLIC_URL}/assets/images/experience-images/AnkaraUniv.png`,
   },
 ];
 

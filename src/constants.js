@@ -1,7 +1,7 @@
 // Routes.
-export const ROUTE_HOME = "/";
-export const ROUTE_PROJECTS = "/projects";
-export const ROUTE_EXPERIENCE = "/experience";
+export const ROUTE_HOME = process.env.PUBLIC_URL;
+export const ROUTE_PROJECTS = `${process.env.PUBLIC_URL}/projects`;
+export const ROUTE_EXPERIENCE = `${process.env.PUBLIC_URL}/experience`;
 
 // Route ID Names.
 // See Dashboard.jsx and TopNav.jsx.

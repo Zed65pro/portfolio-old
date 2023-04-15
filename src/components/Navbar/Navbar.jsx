@@ -20,14 +20,19 @@ const Navbar = (props) => {
   const icon = theme === "light" ? <BsMoon size={30} /> : <BsSun size={30} />;
   const logoImg =
     theme === "light" ? (
-      <Logo src="~/assets/images/dark-logo.png" alt="dark-logo" />
+      <Logo
+        src={`${process.env.PUBLIC_URL}/assets/images/dark-logo.png`}
+        alt="dark-logo"
+      />
     ) : (
-      <Logo src="~/assets/images/light-logo.png" alt="light-logo" />
+      <Logo
+        src={`${process.env.PUBLIC_URL}/assets/images/light-logo.png" alt="light-logo`}
+      />
     );
 
   return (
     <Nav>
-      <LogoLink href={constants.ROUTE_HOME} className="logo">
+      <LogoLink href={`${constants.ROUTE_HOME}`} className="logo">
         {logoImg}
       </LogoLink>
       <Toggle onClick={changeTheme}>{icon}</Toggle>
